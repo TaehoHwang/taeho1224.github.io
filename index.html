@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Your Name.">
-  <title>Your Name | About</title>
+  <meta name="description" content="Personal website of Your Name.">
+  <title>Taeho Hwang</title>
 
   <style>
     * {
@@ -26,9 +26,28 @@
       padding: 64px 24px;
     }
 
+    .profile-header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
     h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .affiliation {
+      margin: 12px 0 0;
+      color: #606875;
+      font-size: 1.05rem;
+    }
+
+    h2 {
       margin: 0 0 20px;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     p {
@@ -71,13 +90,26 @@
 
 <body>
   <main>
+    <!-- 이름과 소속 -->
+    <header class="profile-header">
+      <h1>Your Name</h1>
+      <p class="affiliation">[Position] · [Organization]</p>
+    </header>
+
+    <!-- 자기소개 -->
     <section id="about" aria-labelledby="about-heading">
-      <h1 id="about-heading">About</h1>
+      <h2 id="about-heading">About</h2>
 
       <p>
         I am a researcher in Memory Systems Research at SK hynix. My research interests include operating systems, memory systems, and storage systems. I am currently studying the memory impact on systems, particularly in terms of capacity, focusing on HBM and CXL memory. I received his M.S. degree in Electronics and Computer Engineering and his Ph.D. degree in Computer Science, both from Hanyang University.
       </p>
 
+      <p>
+        <strong>Research interests:</strong>
+        [Topic 1], [Topic 2], and [Topic 3].
+      </p>
+
+      <!-- CV 보기 및 다운로드 -->
       <div class="cv-links">
         <a
           class="cv-link"
