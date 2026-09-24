@@ -35,6 +35,32 @@
       margin: 0 0 16px;
     }
 
+    .cv-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .cv-link {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #202530;
+      border-radius: 6px;
+      color: #202530;
+      text-decoration: none;
+    }
+
+    .cv-link:hover {
+      background: #202530;
+      color: #fff;
+    }
+
+    .cv-link:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: 3px;
+    }
+
     @media (max-width: 540px) {
       main {
         padding-top: 40px;
@@ -47,16 +73,13 @@
   <main>
     <section id="about" aria-labelledby="about-heading">
       <h1 id="about-heading">About</h1>
+
       <p>
         Hello! I am [Your Name], a [position] at [organization].
         My work focuses on [your field or area of expertise].
         I am interested in [brief description of your interests].
       </p>
+
       <p>
         <strong>Research interests:</strong>
-        [Topic 1], [Topic 2], and [Topic 3].
-      </p>
-    </section>
-  </main>
-</body>
-</html>
+        [Topic 1], [Topic 2], and [Topic
